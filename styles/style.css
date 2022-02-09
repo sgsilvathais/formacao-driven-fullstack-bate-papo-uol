@@ -1,0 +1,46 @@
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: blue;
+}
+
+main img {
+    width: 130px;
+    height: 92px;
+    margin-bottom: 100px;
+}
+
+main input {
+    width: 260px;
+    height: 54px;
+    border-radius: 5px;
+    border: 1px solid #d7d7d7;
+    margin-bottom: 15px;
+}
+
+main input::placeholder {
+    font-size: 18px;
+    text-align: center;
+    color: #d7d7d7;
+}
+
+main button {
+    width: 109px;
+    height: 45px;
+    border-radius: 9px;
+    border: none;
+    color: #696969;
+}
+
+main button:hover {
+    color: black;
+    background-color: orange;
+}
+
+main button:active {
+    background-color: orangered;
+}
