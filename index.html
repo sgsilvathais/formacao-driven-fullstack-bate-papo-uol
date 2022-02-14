@@ -5,23 +5,40 @@
         <title>Bate-papo UOL</title>
 
         <meta charset="utf-8">
-        <meta name="viewport" width="device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/style.css">
 
     </head>
 
     <body>
-
-        <main>
+        <nav class="hidden">
             <img src="media/logo-entrada.png" alt="logo-bate-papo-uol">
-            <input class="input" type="text" name="name" placeholder="Digite seu nome">
-            <button onclick="SendName()" name="login">Entrar</button>
+            <ion-icon class="menu-lateral" name="people"></ion-icon>
+        </nav>
+        <main>
+           
+            <section>
+                <img src="media/logo-entrada.png" alt="logo-bate-papo-uol">
+                <input class="input" type="text" name="name" placeholder="Digite seu nome">
+                <button onclick="SendName()" name="login">Entrar</button>
+            </section>
+            <img class="loading hidden" src="media/loading.gif" alt="loading">
+            <ul>
+                
+            </ul>
         </main>
+
+        <footer class="hidden">
+            <input class="input-message" type="text" name="name" placeholder="Escreva aqui...">
+            <button class="send-button" onclick="SendMessage()"><ion-icon name="paper-plane-outline"></ion-icon></button>
+        </footer>
 
         
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         <script src="scripts/scripts.js"></script>
+        
     </body>
 
 </html>
